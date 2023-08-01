@@ -46,7 +46,7 @@
             fill: #002332;
             color: #002332 !important;
             background-color: transparent;
-            background-image: linear-gradient(90deg, var(--e-global-color-29d7765, #FE612C) 15%, var(--e-global-color-c05c92e, #FFA12C) 100%);
+            background-image: linear-gradient(90deg, #FE612C 15%, #FFA12C 100%);
             border-radius: 40px 40px 40px 40px;
             padding: 9px 33px 6px 33px;
             border: none !important;
@@ -54,10 +54,31 @@
             gap: 5px;
             align-items: center;
         }
+
         .logo a img {
             width: 75px;
             height: 75px;
             object-fit: cover;
+        }
+
+        .card-top-img {
+            width: 66px;
+            height: 66px;
+            object-fit: cover;
+            position: absolute;
+            left: 50%;
+            top: -10%;
+            transform: translate(-50%, 0%);
+        }
+
+        .card-left-img {
+            width: 66px;
+            height: 66px;
+            object-fit: cover;
+            position: absolute;
+            /*left: 50%;*/
+            top: 10%;
+            transform: translate(-75%, 0%);
         }
     </style>
 </head>
@@ -146,9 +167,11 @@
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
                  data-aos="fade-up" data-aos-delay="200">
-                <h1 class="fw-bold">ERPWellness - THE ONLY TOOL YOU NEED TO <br> <span style="color: #ffa12c">MANAGE YOUR WHOLE BUSINESS.</span></h1>
+                <h1 class="fw-bold">ERPWellness - THE ONLY TOOL YOU NEED TO <br> <span style="color: #ffa12c">MANAGE
+                    YOUR WHOLE BUSINESS.</span></h1>
                 <h3 class="text-white">
-                    Love the idea of having all your business operations in one place? No problem! ERPWellness is the only tool you need to manage your company’s entire workflow from anywhere, at any time!
+                    Love the idea of having all your business operations in one place? No problem! ERPWellness is the
+                    only tool you need to manage your company’s entire workflow from anywhere, at any time!
                 </h3>
                 <div class="d-flex justify-content-center justify-content-lg-start mt-3">
                     <a href="#about" class="custom-header-btn getstarted scrollto me-5">Get Started</a>
@@ -159,7 +182,10 @@
             </div>
             <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
                 <div class="ratio ratio-16x9">
-                    <iframe width="978" height="550" src="https://www.youtube.com/embed/dVwpi1RvIeA" title="Tongle Employee Assistance Programme (EAP) Software" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="978" height="550" src="https://www.youtube.com/embed/dVwpi1RvIeA"
+                            title="Tongle Employee Assistance Programme (EAP) Software" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -175,46 +201,53 @@
 
             <div class="">
                 <h2>
-                    SPEND <span style="color: #ffa12c">LESS TIME</span> ON ADMINISTRATIVE TASKS, AND <span style="color: #ffa12c">MORE TIME</span> ON WHAT YOU'RE GOOD AT, USING <span style="color: #ffa12c">ERPWELLNESS</span> ,AN ALL-IN-ONE BUSINESS SYSTEM.
+                    SPEND <span style="color: #ffa12c">LESS TIME</span> ON ADMINISTRATIVE TASKS, AND <span
+                        style="color: #ffa12c">MORE TIME</span> ON WHAT YOU'RE GOOD AT, USING <span
+                        style="color: #ffa12c">ERPWELLNESS</span> ,AN ALL-IN-ONE BUSINESS SYSTEM.
                 </h2>
             </div>
 
             <div class="row content mt-5">
-                <div class="col-lg-4" >
+                <div class="col-lg-4 mb-5">
                     <div class="card" style="min-height: 350px">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center gap-3">
+                        <img src="./assets/img/image-removebg-preview.png" class="card-top-img" alt="">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center gap-3 mt-3">
                             <h5>Accounting and Billing Management</h5>
                             <p class="text-center">
-                                Get all the tools to control your business accounting and inventory in one place. Use convenient dashboards to set financial goals, invoice clients, manage taxation, and see where your money is going.
+                                Get all the tools to control your business accounting and inventory in one place. Use
+                                convenient dashboards to set financial goals, invoice clients, manage taxation, and see
+                                where your money is going.
                             </p>
-                            <a href="#" class="btn btn-success rounded-5">Show More</a>
+                            <a href="#" class="btn btn-success btn-sm px-3 py-2 rounded-5">Show More</a>
                         </div>
                     </div>
 
                 </div>
-                <div class="col-lg-4 pt-4 pt-lg-0">
+                <div class="col-lg-4 mb-5">
                     <div class="card" style="min-height: 350px">
-                        <div class="card-body">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center gap-3">
-                                <h5>Manage HR - Business Greatest Assets</h5>
-                                <p class="text-center">
-                                    Gain easy access to the personal details of your staff. Edit staff information, assign roles, and gain control over access. Handle all facets of your HR – from attendance records to salary payments – all without lifting a finger.
-                                </p>
-                                <a href="#" class="btn btn-dark rounded-5">Show More</a>
-                            </div>
+                        <img src="./assets/img/image-removebg-preview-1.png" class="card-top-img" alt="">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center gap-3 mt-3">
+                            <h5>Manage HR - Business Greatest Assets</h5>
+                            <p class="text-center">
+                                Gain easy access to the personal details of your staff. Edit staff information, assign
+                                roles, and gain control over access. Handle all facets of your HR – from attendance
+                                records to salary payments – all without lifting a finger.
+                            </p>
+                            <a href="#" class="btn btn-dark btn-sm px-3 py-2 rounded-5">Show More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 pt-4 pt-lg-0">
                     <div class="card" style="min-height: 350px">
-                        <div class="card-body">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center gap-3">
-                                <h5>Manage Leads & Deals</h5>
-                                <p class="text-center">
-                                    Easily keep in touch with clients and users. Streamline the contract process for a more efficient business. Generate new estimates quickly and easily. Crush deadlines by managing estimates – all in one place, in a matter of minutes.
-                                </p>
-                                <a href="#" class="btn btn-dark rounded-5">Show More</a>
-                            </div>
+                        <img src="./assets/img/image-removebg-preview-2.png" class="card-top-img" alt="">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center gap-3 mt-3">
+                            <h5>Manage Leads & Deals</h5>
+                            <p class="text-center">
+                                Easily keep in touch with clients and users. Streamline the contract process for a more
+                                efficient business. Generate new estimates quickly and easily. Crush deadlines by
+                                managing estimates – all in one place, in a matter of minutes.
+                            </p>
+                            <a href="#" class="btn btn-warning text-white btn-sm px-3 py-2 rounded-5">Show More</a>
                         </div>
                     </div>
                 </div>
@@ -222,7 +255,6 @@
             <div class="d-flex justify-content-center align-items-center my-5">
                 <a href="#" class="btn custom-header-btn rounded-5 fw-light text-uppercase py-3">View Demo For Free</a>
             </div>
-
         </div>
     </section><!-- End About Us Section -->
 
@@ -239,7 +271,6 @@
                     <img src="assets/img/Laptop-1.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-
                     <div class="content">
                         <h3 style="color: #ffa12c">ERPWellness is designed for businesses of all sizes.</h3>
                         <p class="text-white">
@@ -248,284 +279,262 @@
                             need in one place.
                         </p>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center my-5">
-
+                    <div class="d-flex justify-content-end align-items-center flex-column flex-sm-row my-5 gap-2 fw-bold">
+                        <span class="text-white">Fully Verified Ratings <br> Trusted by Hundreds of Happy Users.</span>
+                        <ul class="list-unstyled d-flex align-items-center justify-content-end gap-1 m-0">
+                            <li><i class="bx bxs-star" style="color: #ffa12c"></i></li>
+                            <li><i class="bx bxs-star" style="color: #ffa12c"></i></li>
+                            <li><i class="bx bxs-star" style="color: #ffa12c"></i></li>
+                            <li><i class="bx bxs-star" style="color: #ffa12c"></i></li>
+                            <li><i class="bx bxs-star" style="color: #ffa12c"></i></li>
+                        </ul>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center me-5">
+                        <a href="#" class="btn custom-header-btn rounded-5 fw-light text-uppercase py-3">
+                            <span class="fw-bold">Buy now</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 style="height: 18px;width: 18px;margin: 0;"
+                                 fill="#000000" height="800px" width="800px" id="Capa_1" viewBox="0 0 483.1 483.1"
+                                 xml:space="preserve">
+                            <g>
+                                <path d="M434.55,418.7l-27.8-313.3c-0.5-6.2-5.7-10.9-12-10.9h-58.6c-0.1-52.1-42.5-94.5-94.6-94.5s-94.5,42.4-94.6,94.5h-58.6  c-6.2,0-11.4,4.7-12,10.9l-27.8,313.3c0,0.4,0,0.7,0,1.1c0,34.9,32.1,63.3,71.5,63.3h243c39.4,0,71.5-28.4,71.5-63.3  C434.55,419.4,434.55,419.1,434.55,418.7z M241.55,24c38.9,0,70.5,31.6,70.6,70.5h-141.2C171.05,55.6,202.65,24,241.55,24z   M363.05,459h-243c-26,0-47.2-17.3-47.5-38.8l26.8-301.7h47.6v42.1c0,6.6,5.4,12,12,12s12-5.4,12-12v-42.1h141.2v42.1  c0,6.6,5.4,12,12,12s12-5.4,12-12v-42.1h47.6l26.8,301.8C410.25,441.7,389.05,459,363.05,459z"></path>
+                            </g>
+                        </svg>
+                        </a>
                     </div>
                 </div>
 
             </div>
 
         </div>
-    </section><!-- End Why Us Section -->
+    </section>
 
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills">
         <div class="container" data-aos="fade-up">
-
             <div class="row">
-                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-                    <img src="assets/img/skills.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-                    <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
-                    <p class="fst-italic">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore
-                        magna aliqua.
-                    </p>
-
-                    <div class="skills-content">
-
-                        <div class="progress">
-                            <span class="skill">HTML <i class="val">100%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="heading-section mb-5">Carousel #03</h2>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="featured-carousel owl-carousel">
+                                <div class="item">
+                                    <div class="work">
+                                        <div class="img d-flex align-items-end justify-content-center"
+                                             style="background-image: url(./assets/img/work-1.jpg.webp);">
+                                            <div class="text w-100">
+                                                <span class="cat">Web Design</span>
+                                                <h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="work">
+                                        <div class="img d-flex align-items-end justify-content-center"
+                                             style="background-image: url(./assets/img/work-1.jpg.webp);">
+                                            <div class="text w-100">
+                                                <span class="cat">Web Design</span>
+                                                <h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="work">
+                                        <div class="img d-flex align-items-end justify-content-center"
+                                             style="background-image: url(./assets/img/work-1.jpg.webp);">
+                                            <div class="text w-100">
+                                                <span class="cat">Web Design</span>
+                                                <h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="work">
+                                        <div class="img d-flex align-items-end justify-content-center"
+                                             style="background-image: url(./assets/img/work-1.jpg.webp);">
+                                            <div class="text w-100">
+                                                <span class="cat">Web Design</span>
+                                                <h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="work">
+                                        <div class="img d-flex align-items-end justify-content-center"
+                                             style="background-image: url(./assets/img/work-1.jpg.webp);">
+                                            <div class="text w-100">
+                                                <span class="cat">Web Design</span>
+                                                <h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="progress">
-                            <span class="skill">CSS <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">JavaScript <i class="val">75%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">Photoshop <i class="val">55%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
-                                     aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
                     </div>
-
                 </div>
             </div>
-
         </div>
     </section><!-- End Skills Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg">
         <div class="container" data-aos="fade-up">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div>
+                            <h3 style="color:#FFA12C">LOOKING FOR A SIDE HUSTLE?</h3>
+                            <h2 class="text-white">
+                                OWN YOUR<span style="color:#FFA12C">SaaS</span>AND SCALE<br>YOUR BUSINESS!
+                            </h2>
+                            <h2 class="text-white">
+                                ERP<span style="color:#FFA12C">Wellness </span>
+                            </h2>
+                            <p class="text-white fw-bold">
+                                Buy Your Extended License Now, and Start Growing The Number of Your Paying Customers.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5 img flex-column d-flex justify-content-center align-items-start gap-3">
+                                <a href="#" class="btn custom-header-btn rounded-5 fw-light text-uppercase py-3">Live
+                                    Preview</a>
+                                <img src="assets/img/Laptop-1.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+                                <div class="content">
+                                    <h3 style="color: #ffa12c">ERPWellness is designed for businesses of all sizes.</h3>
+                                    <p class="text-white">
+                                        ERPWellness makes managing your business easier than ever.
+                                        It takes the hassle out of using multiple tools and puts everything you
+                                        need in one place.
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-end align-items-center flex-column flex-sm-row my-5 gap-2 fw-bold">
+                                    <span class="text-white">Fully Verified Ratings <br> Trusted by Hundreds of Happy
+                                        Users.</span>
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-end gap-1 m-0">
+                                        <li><i class="bx bxs-star" style="color: #ffa12c"></i></li>
+                                        <li><i class="bx bxs-star" style="color: #ffa12c"></i></li>
+                                        <li><i class="bx bxs-star" style="color: #ffa12c"></i></li>
+                                        <li><i class="bx bxs-star" style="color: #ffa12c"></i></li>
+                                        <li><i class="bx bxs-star" style="color: #ffa12c"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex justify-content-end align-items-center me-5">
+                                    <a href="#" class="btn custom-header-btn rounded-5 fw-light text-uppercase py-3">
+                                        <span class="fw-bold">Buy now</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                                             style="height: 18px;width: 18px;margin: 0;"
+                                             fill="#000000" height="800px" width="800px" id="Capa_1"
+                                             viewBox="0 0 483.1 483.1"
+                                             xml:space="preserve">
+                            <g>
+                                <path d="M434.55,418.7l-27.8-313.3c-0.5-6.2-5.7-10.9-12-10.9h-58.6c-0.1-52.1-42.5-94.5-94.6-94.5s-94.5,42.4-94.6,94.5h-58.6  c-6.2,0-11.4,4.7-12,10.9l-27.8,313.3c0,0.4,0,0.7,0,1.1c0,34.9,32.1,63.3,71.5,63.3h243c39.4,0,71.5-28.4,71.5-63.3  C434.55,419.4,434.55,419.1,434.55,418.7z M241.55,24c38.9,0,70.5,31.6,70.6,70.5h-141.2C171.05,55.6,202.65,24,241.55,24z   M363.05,459h-243c-26,0-47.2-17.3-47.5-38.8l26.8-301.7h47.6v42.1c0,6.6,5.4,12,12,12s12-5.4,12-12v-42.1h141.2v42.1  c0,6.6,5.4,12,12,12s12-5.4,12-12v-42.1h47.6l26.8,301.8C410.25,441.7,389.05,459,363.05,459z"></path>
+                            </g>
+                        </svg>
+                                    </a>
+                                </div>
+                            </div>
 
-            <div class="section-title">
-                <h2>Services</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat sit in iste officiis commodi quidem hic quas.</p>
-            </div>
-
-            <div class="row">
-                <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                        <h4><a href="">Lorem Ipsum</a></h4>
-                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <h1>Second Slide</h1>
                     </div>
                 </div>
-
-                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-                     data-aos-delay="200">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-file"></i></div>
-                        <h4><a href="">Sed ut perspici</a></h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
-                     data-aos-delay="300">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-tachometer"></i></div>
-                        <h4><a href="">Magni Dolores</a></h4>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
-                     data-aos-delay="400">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-layer"></i></div>
-                        <h4><a href="">Nemo Enim</a></h4>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                    </div>
-                </div>
-
             </div>
 
         </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-        <div class="container" data-aos="zoom-in">
-
-            <div class="row">
-                <div class="col-lg-9 text-center text-lg-start">
-                    <h3>Call To Action</h3>
-                    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.</p>
-                </div>
-                <div class="col-lg-3 cta-btn-container text-center">
-                    <a class="cta-btn align-middle" href="#">Call To Action</a>
-                </div>
-            </div>
-
-        </div>
-    </section><!-- End Cta Section -->
+    </section>
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
         <div class="container" data-aos="fade-up">
 
-            <div class="section-title">
-                <h2>Portfolio</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <div class="text-center my-4">
+                <h1>MANAGE &amp; ORGANIZE
+                    YOUR ENTERPRISE USING
+                    <br>
+                    <span style="color:#FFA12C">THE #1 </span>
+                    END-TO-END
+                    <span style="color:#FFA12C">CONSOLIDATED SYSTEM</span>
+                </h1>
             </div>
 
-            <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-card">Card</li>
-                <li data-filter=".filter-web">Web</li>
-            </ul>
-
-            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                           class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
+            <div class="row my-5 mx-3">
+                <div class="col-lg-5 d-flex flex-column justify-content-center align-items-start gap-4">
+                    <h1>
+                        <span style="color:#FFA12C">ERPWellness</span>
+                        All-In-One Business System
+                    </h1>
+                    <p>
+                        Always looking for better ways to do things, innovate and help people achieve their goals.
+                        ERPWellness covers the full spectrum of managing Human Resources, Accounting systems, Leads
+                        Management, Sales, Invoicing, Customer Support, and much more
+                    </p>
+                    <div class="d-flex justify-content-start align-items-center my-5">
+                        <a href="#" class="btn custom-header-btn rounded-5 fw-light text-uppercase py-3">View Demo For
+                            Free</a>
                     </div>
                 </div>
+                <div class="col-lg-7 d-flex flex-column gap-4">
+                    <div class="d-flex align-items-start">
+                        <div class="card col-md-10 px-3"
+                             style="border: none; background-color: transparent;background-image: linear-gradient(90deg, #FE612C 15%, #FFA12C 100%);">
+                            <img src="./assets/img/image-removebg-preview-3.png" class="card-left-img" alt="">
+                            <div class="card-body py-4 px-5">
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                                <h5 class="mb-3">
+                                    More than<span style="color:#fff"> 250 Customization
+                                    requests </span> by the trusted customers around the
+                                    global.
+                                </h5>
+                                <p class="text-white text-sm">
+                                    ERPWellness has the most flexible system and features to be customized based on your
+                                    exact business needs. Our creative and experienced developers are ready to make all
+                                    the changes that you need for your business. ERPWellness customization options have
+                                    made business owners’ lives easier, from every detail in the functionalities and the
+                                    system design.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="portfolio-info">
-                        <h4>Web 3</h4>
-                        <p>Web</p>
-                        <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
-                           class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
+                    <div class="d-flex justify-content-end align-items-end">
+                        <div class="card col-md-10 px-3"
+                             style="border: none; background-color: #ffa12c;">
+                            <img src="./assets/img/image-removebg-preview-4.png" class="card-left-img" alt="">
+                            <div class="card-body py-4 px-5">
+                                <h5 class="mb-3">
+                                    Trusted by more than <span style="color:#fff">500 customers</span> who purchased
+                                    <span style="color:#fff">ERPWellness</span>
+                                    for their companies around the globe.
+                                </h5>
+                                <p class="text-sm">
+                                    ERPWellness has the most comprehensive dashboard with all the essential details
+                                    under one system. ERPWellness Dashboards have made business owners’ lives easier,
+                                    from every detail like total Clients, Users, Invoices, Projects, and estimations to
+                                    Leads, Deals, and items, where you can get quantitative data in the most simple
+                                    layout.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>App 2</h4>
-                        <p>App</p>
-                        <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
-                           class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Card 2</h4>
-                        <p>Card</p>
-                        <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                           class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Web 2</h4>
-                        <p>Web</p>
-                        <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
-                           class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>App 3</h4>
-                        <p>App</p>
-                        <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
-                           class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Card 1</h4>
-                        <p>Card</p>
-                        <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
-                           class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Card 3</h4>
-                        <p>Card</p>
-                        <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
-                           class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Web 3</h4>
-                        <p>Web</p>
-                        <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
-                           class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
-                </div>
-
             </div>
-
         </div>
     </section><!-- End Portfolio Section -->
 
@@ -935,6 +944,8 @@
         class="bi bi-arrow-up-short"></i></a>
 
 <!-- Vendor JS Files -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 <script src="assets/vendor/aos/aos.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -945,6 +956,13 @@
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/carousel-script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854"
+        integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg=="
+        data-cf-beacon='{"rayId":"7ef9fc95ae494124","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.7.0","si":100}'
+        crossorigin="anonymous"></script>
+
 
 </body>
 
