@@ -28,6 +28,8 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
 
     <!-- =======================================================
     * Template Name: Arsha
@@ -76,9 +78,82 @@
             height: 66px;
             object-fit: cover;
             position: absolute;
-            /*left: 50%;*/
             top: 10%;
             transform: translate(-75%, 0%);
+        }
+
+        .card-left-center-img {
+            width: 66px;
+            height: 66px;
+            object-fit: cover;
+            position: absolute;
+            top: 50%;
+            transform: translate(-75%, -50%);
+            border-radius: 50%;
+        }
+
+        .text-yellow {
+            color: #FFA12C !important;
+        }
+
+        .rotated-text {
+            color: white;
+            transform: rotate(-70deg);
+            right: 70px;
+            font-size: 20px;
+        }
+
+        .header-text {
+            color: #002332;
+            font-size: 29px;
+            font-weight: 700;
+            line-height: 35px;
+        }
+
+        #developmentRequestForm label {
+            font-size: 14px;
+        }
+
+        #developmentRequestForm input::placeholder, #developmentRequestForm textarea::placeholder, #developmentRequestForm input[type='file'] {
+            color: #999999;
+            font-size: 12px;
+        }
+
+        .vertical-separator {
+            padding: 1px;
+            height: 200px;
+            background-color: #002332;
+        }
+
+        .custom-card-header {
+            color: #ffa12c;
+            font-family: "Poppins", Sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 39px;
+            font-style: italic;
+        }
+
+        .card-body-text {
+            text-align: left;
+            font-family: "Lato", Sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            font-style: italic;
+            line-height: 25px;
+        }
+
+        .all-divs {
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 1fr;
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+        }
+
+        .all-divs div {
+            min-height: 120px;
         }
     </style>
 </head>
@@ -256,7 +331,7 @@
                 <a href="#" class="btn custom-header-btn rounded-5 fw-light text-uppercase py-3">View Demo For Free</a>
             </div>
         </div>
-    </section><!-- End About Us Section -->
+    </section>
 
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us section-bg">
@@ -383,7 +458,7 @@
         </div>
     </section><!-- End Skills Section -->
 
-    <!-- ======= Services Section ======= -->
+    <!-- ======= What Our Customers Say About Our Solutions ======= -->
     <section id="services" class="services section-bg">
         <div class="container" data-aos="fade-up">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -442,10 +517,10 @@
                                              fill="#000000" height="800px" width="800px" id="Capa_1"
                                              viewBox="0 0 483.1 483.1"
                                              xml:space="preserve">
-                            <g>
-                                <path d="M434.55,418.7l-27.8-313.3c-0.5-6.2-5.7-10.9-12-10.9h-58.6c-0.1-52.1-42.5-94.5-94.6-94.5s-94.5,42.4-94.6,94.5h-58.6  c-6.2,0-11.4,4.7-12,10.9l-27.8,313.3c0,0.4,0,0.7,0,1.1c0,34.9,32.1,63.3,71.5,63.3h243c39.4,0,71.5-28.4,71.5-63.3  C434.55,419.4,434.55,419.1,434.55,418.7z M241.55,24c38.9,0,70.5,31.6,70.6,70.5h-141.2C171.05,55.6,202.65,24,241.55,24z   M363.05,459h-243c-26,0-47.2-17.3-47.5-38.8l26.8-301.7h47.6v42.1c0,6.6,5.4,12,12,12s12-5.4,12-12v-42.1h141.2v42.1  c0,6.6,5.4,12,12,12s12-5.4,12-12v-42.1h47.6l26.8,301.8C410.25,441.7,389.05,459,363.05,459z"></path>
-                            </g>
-                        </svg>
+                                            <g>
+                                                <path d="M434.55,418.7l-27.8-313.3c-0.5-6.2-5.7-10.9-12-10.9h-58.6c-0.1-52.1-42.5-94.5-94.6-94.5s-94.5,42.4-94.6,94.5h-58.6  c-6.2,0-11.4,4.7-12,10.9l-27.8,313.3c0,0.4,0,0.7,0,1.1c0,34.9,32.1,63.3,71.5,63.3h243c39.4,0,71.5-28.4,71.5-63.3  C434.55,419.4,434.55,419.1,434.55,418.7z M241.55,24c38.9,0,70.5,31.6,70.6,70.5h-141.2C171.05,55.6,202.65,24,241.55,24z   M363.05,459h-243c-26,0-47.2-17.3-47.5-38.8l26.8-301.7h47.6v42.1c0,6.6,5.4,12,12,12s12-5.4,12-12v-42.1h141.2v42.1  c0,6.6,5.4,12,12,12s12-5.4,12-12v-42.1h47.6l26.8,301.8C410.25,441.7,389.05,459,363.05,459z"></path>
+                                            </g>
+                                        </svg>
                                     </a>
                                 </div>
                             </div>
@@ -457,11 +532,10 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- ======= Portfolio Section ======= -->
+    <!-- ======= MANAGE & ORGANIZE YOUR ENTERPRISE USING THE #1 END-TO-END CONSOLIDATED SYSTEM ======= -->
     <section id="portfolio" class="portfolio" style="background-color: #F6F7F9">
         <div class="container" data-aos="fade-up">
 
@@ -537,419 +611,836 @@
             </div>
 
         </div>
-    </section><!-- End Portfolio Section -->
+    </section>
 
 
-
-
-    <!-- ======= Team Section ======= -->
+    <!-- ======= Accounting and Billing Management ======= -->
     <section id="team" class="team">
         <div class="container" data-aos="fade-up">
 
-            <div class="section-title">
-                <h2>Team</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <div class="text-center my-5">
+                <h1>Accounting and Billing Management</h1>
             </div>
 
-            <div class="row">
+            <div class="row content mt-5">
+                <div class="col-lg-4 mb-5">
+                    <div class="card" style="min-height: 350px">
+                        <img src="./assets/img/image-removebg-preview.png" class="card-top-img" alt="">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center gap-3 mt-3">
+                            <h5>Stay compliant and report your finances accurately</h5>
+                            <p class="text-center">
+                                ERPWellness enables you to stay compliant and report your finances accurately, including
+                                Chart of Accounts, Journal Entry, Balance Sheet, and General Ledger.
+                            </p>
+                        </div>
+                    </div>
 
-                <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Walter White</h4>
-                            <span>Chief Executive Officer</span>
-                            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                            <div class="social">
-                                <a href=""><i class="ri-twitter-fill"></i></a>
-                                <a href=""><i class="ri-facebook-fill"></i></a>
-                                <a href=""><i class="ri-instagram-fill"></i></a>
-                                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                            </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="card" style="min-height: 350px">
+                        <img src="./assets/img/image-removebg-preview-1.png" class="card-top-img" alt="">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center gap-3 mt-3">
+                            <h5>Choose the right sales tax automation software</h5>
+                            <p class="text-center">
+                                Automate tax calculation by creating different tax rates and easily manage your
+                                inventory by adding products and categorizing them, assigning SKUs, and set sales and
+                                purchase prices.
+                            </p>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Sarah Jhonson</h4>
-                            <span>Product Manager</span>
-                            <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                            <div class="social">
-                                <a href=""><i class="ri-twitter-fill"></i></a>
-                                <a href=""><i class="ri-facebook-fill"></i></a>
-                                <a href=""><i class="ri-instagram-fill"></i></a>
-                                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                            </div>
+                <div class="col-lg-4 pt-4 pt-lg-0">
+                    <div class="card" style="min-height: 350px">
+                        <img src="./assets/img/image-removebg-preview-2.png" class="card-top-img" alt="">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center gap-3 mt-3">
+                            <h5>Transform your business into a sales machine</h5>
+                            <p class="text-center">
+                                Use the multi-user accounting tool to assign roles and permissions to each staff member.
+                                Manage staff permissions and take control over access.
+                            </p>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>William Anderson</h4>
-                            <span>CTO</span>
-                            <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                            <div class="social">
-                                <a href=""><i class="ri-twitter-fill"></i></a>
-                                <a href=""><i class="ri-facebook-fill"></i></a>
-                                <a href=""><i class="ri-instagram-fill"></i></a>
-                                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Amanda Jepson</h4>
-                            <span>Accountant</span>
-                            <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                            <div class="social">
-                                <a href=""><i class="ri-twitter-fill"></i></a>
-                                <a href=""><i class="ri-facebook-fill"></i></a>
-                                <a href=""><i class="ri-instagram-fill"></i></a>
-                                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-
         </div>
-    </section><!-- End Team Section -->
+    </section>
 
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
+    <!-- ======= GET ALL THE CRITICAL TOOLS TO MANAGE BUSINESS FINANCES ======= -->
+    <section id="pricing" class="pricing section-bg">
+        <div class="container" data-aos="fade-up">
+            <h1>Incomplete</h1>
+        </div>
+    </section>
+
+    <!-- ======= Manage Leads & Deals ======= -->
+    <section id="team" class="team">
         <div class="container" data-aos="fade-up">
 
-            <div class="section-title">
-                <h2>Pricing</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <div class="text-center my-5">
+                <h1>Manage HR - Business Greatest Assets</h1>
             </div>
 
-            <div class="row">
+            <div class="row content mt-5">
+                <div class="col-lg-4 mb-5">
+                    <div class="card" style="min-height: 350px">
+                        <img src="./assets/img/image-removebg-preview.png" class="card-top-img" alt="">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center gap-3 mt-3">
+                            <h5>Manage all employee matters with ERPWellness</h5>
+                            <p class="text-center">
+                                Whether you employ 5, 50, or 500 people, with ERPWellness, you can manage all employee
+                                matters. From hiring to performance and salaries – everything is under one roof.
+                            </p>
+                        </div>
+                    </div>
 
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="box">
-                        <h3>Free Plan</h3>
-                        <h4><sup>$</sup>0<span>per month</span></h4>
-                        <ul>
-                            <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                            <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                            <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                            <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                            <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                        </ul>
-                        <a href="#" class="buy-btn">Get Started</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="card" style="min-height: 350px">
+                        <img src="./assets/img/image-removebg-preview-1.png" class="card-top-img" alt="">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center gap-3 mt-3">
+                            <h5>Customize your easy-to-use HRM system</h5>
+                            <p class="text-center">
+                                Customizable, versatile, and easy-to-use complete HRM system. You can also manage the
+                                Attendance, Bulk Attendance, Holidays, Leaves, Meetings, Assets, Documents, and Company
+                                Policies. Create, Edit and Filter as per your convenience.
+                            </p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-                    <div class="box featured">
-                        <h3>Business Plan</h3>
-                        <h4><sup>$</sup>29<span>per month</span></h4>
-                        <ul>
-                            <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                            <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                            <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                            <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                            <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-                        </ul>
-                        <a href="#" class="buy-btn">Get Started</a>
+                <div class="col-lg-4 pt-4 pt-lg-0">
+                    <div class="card" style="min-height: 350px">
+                        <img src="./assets/img/image-removebg-preview-2.png" class="card-top-img" alt="">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center gap-3 mt-3">
+                            <h5>Get A Detailed Understanding Of Each Aspect Of The Employee</h5>
+                            <p class="text-center">
+                                Get a calendar view for every deal detail. In short, managing deals has never been
+                                easier with the ERPWellness 360 degrees of deals visibility in the system.
+                            </p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-                    <div class="box">
-                        <h3>Developer Plan</h3>
-                        <h4><sup>$</sup>49<span>per month</span></h4>
-                        <ul>
-                            <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                            <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                            <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                            <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                            <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-                        </ul>
-                        <a href="#" class="buy-btn">Get Started</a>
-                    </div>
-                </div>
-
             </div>
-
         </div>
-    </section><!-- End Pricing Section -->
+    </section>
 
-    <!-- ======= Frequently Asked Questions Section ======= -->
+
+    <!-- ======= HANDLE ALL FACETS OF YOUR HR MANAGE BUSINESS FINANCES ======= -->
+    <section id="faq" class="faq"
+             style="background-color: transparent;background-image: linear-gradient(90deg, #fe612c 5%, #ffa12c 33%);">
+        <div class="container" data-aos="fade-up">
+            <h1>Incomplete</h1>
+        </div>
+    </section>
+
+
+    <!-- ======= Manage Leads & Deals ======= -->
+    <section id="team" class="team">
+        <div class="container" data-aos="fade-up">
+
+            <div class="text-center my-5">
+                <h1>Manage Leads & Deals</h1>
+            </div>
+
+            <div class="row content mt-5">
+                <div class="col-lg-4 mb-5">
+                    <div class="card" style="min-height: 350px">
+                        <img src="./assets/img/image-removebg-preview.png" class="card-top-img" alt="">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center gap-3 mt-3">
+                            <h5>Assign Projects, Manage Leads, and Sign Deals</h5>
+                            <p class="text-center">
+                                Assign projects, deal with accounting, and collaborate with your team. Manage leads,
+                                turn them into clients, and close deals. Get an overview of deals in a week, month, and
+                                deals in the last 30 days.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="card" style="min-height: 350px">
+                        <img src="./assets/img/image-removebg-preview-1.png" class="card-top-img" alt="">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center gap-3 mt-3">
+                            <h5>Manage Every Aspects of Your Business</h5>
+                            <p class="text-center">
+                                Assign Tasks, Products, Files, and team members for each deal, manage discussions and
+                                notes, where you can manage every aspect of your business using one convenient
+                                dashboard.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 pt-4 pt-lg-0">
+                    <div class="card" style="min-height: 350px">
+                        <img src="./assets/img/image-removebg-preview-2.png" class="card-top-img" alt="">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center gap-3 mt-3">
+                            <h5>360 Degrees of Deals Visibility in the System.</h5>
+                            <p class="text-center">
+                                Get a calendar view for every deal detail. In short, managing deals has never been
+                                easier with the ERPWELLNESS 360 degrees of deals visibility in the system.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======= MAXIMIZE YOUR RESOURCES ======= -->
     <section id="faq" class="faq section-bg">
         <div class="container" data-aos="fade-up">
-
-            <div class="section-title">
-                <h2>Frequently Asked Questions</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat sit in iste officiis commodi quidem hic quas.</p>
-            </div>
-
-            <div class="faq-list">
-                <ul>
-                    <li data-aos="fade-up" data-aos-delay="100">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
-                                                                       data-bs-target="#faq-list-1">Non consectetur a
-                        erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i
-                                class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                            <p>
-                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non
-                                curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus
-                                non.
-                            </p>
-                        </div>
-                    </li>
-
-                    <li data-aos="fade-up" data-aos-delay="200">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                                                       data-bs-target="#faq-list-2" class="collapsed">Feugiat
-                        scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i
-                                class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                            <p>
-                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
-                                velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec
-                                pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus
-                                turpis massa tincidunt dui.
-                            </p>
-                        </div>
-                    </li>
-
-                    <li data-aos="fade-up" data-aos-delay="300">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                                                       data-bs-target="#faq-list-3" class="collapsed">Dolor
-                        sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i
-                                class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                            <p>
-                                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
-                                pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
-                                tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna
-                                molestie at elementum eu facilisis sed odio morbi quis
-                            </p>
-                        </div>
-                    </li>
-
-                    <li data-aos="fade-up" data-aos-delay="400">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                                                       data-bs-target="#faq-list-4" class="collapsed">Tempus
-                        quam pellentesque nec nam aliquam sem et tortor consequat? <i
-                                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                            <p>
-                                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est
-                                ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit
-                                adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
-                            </p>
-                        </div>
-                    </li>
-
-                    <li data-aos="fade-up" data-aos-delay="500">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                                                       data-bs-target="#faq-list-5" class="collapsed">Tortor
-                        vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i
-                                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                            <p>
-                                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo
-                                integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc
-                                eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
-                            </p>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-
+            <h1>Incomplete</h1>
         </div>
-    </section><!-- End Frequently Asked Questions Section -->
+    </section>
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+
+    <!-- ======= MANAGING YOUR BUSINESS EFFECTIVELY ======= -->
+    <section id="faq" class="faq">
         <div class="container" data-aos="fade-up">
+            <div class="col-md-12 my-5">
+                <div class="featured-carousel owl-carousel">
+                    <!--First Slide-->
+                    <div class="item w-100">
+                        <div class="all-divs">
+                            <div class="card" style="border-color: #ffa12c">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Staff<br>Management</h2>
+                                    <div class="card-body-text">
+                                        Keep track of employee information easily and conveniently. Search for staff
+                                        through simple filter options, and edit and manage their information as you
+                                        please.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #6fd943">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Reports<br>Management</h2>
+                                    <div class="card-body-text">
+                                        Get detailed, real-time reports to help you keep track of your business
+                                        performance. Use graphs and other visuals to make data easy to understand and
+                                        act on.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #002332">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Estimates<br>Management</h2>
+                                    <div class="card-body-text">
+                                        Generate new estimates for your projects quickly and easily. Manage estimates
+                                        with ease by assigning clients, status, and expiry dates to each estimate.
+                                    </div>
+                                </div>
+                            </div>
 
-            <div class="section-title">
-                <h2>Contact</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+                            <div class="card" style="border-color: #ffa12c">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">HR<br>Management</h2>
+                                    <div class="card-body-text">
+                                        Manage all aspects of your HR with a simple interface. Get instant access to key
+                                        information about each employee - from attendance history to training and
+                                        performance.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #6fd943">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Goals and<br>Notes</h2>
+                                    <div class="card-body-text">
+                                        Got goals in mind? Just set them up and the system will automatically track your
+                                        progress, so you can just sit back and enjoy the ride.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #002332">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Contract<br>Module</h2>
+                                    <div class="card-body-text">
+                                        Create legally binding contracts in seconds and keep all your contracts
+                                        organized in one place. Also get real-time updates on the status of your
+                                        contracts, and automatically record contract changes.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" style="border-color: #ffa12c">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Assigning<br>Roles</h2>
+                                    <div class="card-body-text">
+                                        Use the multi-user accounting tool to assign roles and permissions to each staff
+                                        member. Manage staff permissions and take control over access.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #6fd943">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Events and<br>Notice Board</h2>
+                                    <div class="card-body-text">
+                                        prepared for events. Create event reminders, add descriptions to them, and
+                                        assign employees to each of them. You can also issue notices to users, clients,
+                                        or employees.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #002332">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Chat<br>Module</h2>
+                                    <div class="card-body-text">
+                                        Connect directly with your users and clients with a convenient chat module. This
+                                        enables you to increase customer satisfaction, improve response time, and land
+                                        more sales.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Second Slide-->
+                    <div class="item w-100">
+                        <div class="all-divs">
+                            <div class="card" style="border-color: #ffa12c">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Payroll<br>Management </h2>
+                                    <div class="card-body-text">
+                                        Streamline your payroll tasks. Keep your employees happy with accurate and
+                                        timely payslips. Generate bulk payments quickly and easily.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #ffa12c">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Indicator<br>Appraisal </h2>
+                                    <div class="card-body-text">
+                                        Get a clear overview of the performance of your departments. Identify areas of
+                                        improvement in real-time, and streamline processes for better performance.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #ffa12c">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Budget<br>Planner </h2>
+                                    <div class="card-body-text">
+                                        Stay in control of your finances! Set your budget and get real-time updates on
+                                        how well you're sticking to it. Edit and update the budget as often as needed.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #ffa12c">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Projects<br>Management </h2>
+                                    <div class="card-body-text">
+                                        Get an overview of your project status, budget, and due date. Assign and manage
+                                        priority tasks with a kanban board, and get work done on time and on budget.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #ffa12c">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Leads<br>Management </h2>
+                                    <div class="card-body-text">
+                                        Get real-time updates on leads generated through your marketing campaigns. View
+                                        leads in Kanban or List view. Assign pipelines and stages for better lead
+                                        management
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #ffa12c">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Form<br>Builder </h2>
+                                    <div class="card-body-text">
+                                        Reduce time spent on form creation and streamline your business processes with
+                                        easy-to-use, customizable forms. Easily create and manage various form fields as
+                                        per your business needs.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #ffa12c">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Tasks<br>Management </h2>
+                                    <div class="card-body-text">
+                                        Filter tasks by priority, due date, and type. Add a checklist to track your
+                                        progress, and take control of your projects!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #ffa12c">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Deal<br>Management </h2>
+                                    <div class="card-body-text">
+                                        Get a complete overview of all your deals in seconds. Assign tasks, products,
+                                        and users to each deal for better organization
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #ffa12c">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Customer<br>Statement Report </h2>
+                                    <div class="card-body-text">
+                                        Eliminate the hassle of tracking customer statements manually. Get an
+                                        at-a-glance report of all orders, payments, and transactions with a customer or
+                                        vendor.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Third Slide-->
+                    <div class="item w-100">
+                        <div class="all-divs">
+                            <div class="card" style="border-color: #ffa12c">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Project<br>Timesheet</h2>
+                                    <div class="card-body-text">
+                                        Create a timesheet to stay on top of deadlines. Keep track of the time spent on
+                                        each project, and get an overview of how much time is left.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #6fd943">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Projects<br>Tracking</h2>
+                                    <div class="card-body-text">
+                                        Use the project tracker application to track the time spent on each
+                                        project/task. The app takes screenshots as proof of how much time you spent on a
+                                        particular project/task.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #002332">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Goal<br>Tracking</h2>
+                                    <div class="card-body-text">
+                                        Set your goals and keep track of your journey. Manually edit or update your
+                                        progress as you go – Stay in control and achieve your goals quickly and easily!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" style="border-color: #ffa12c">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Sales<br>Management</h2>
+                                    <div class="card-body-text">
+                                        Keep your sales process organized. Easily edit and manage invoices, payments,
+                                        expenses, and credit notes.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #6fd943">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Inventory<br>Management</h2>
+                                    <div class="card-body-text">
+                                        Effortlessly keep track of your inventory. Monitor your stock levels in real
+                                        time, get notified when inventory levels are low, and make changes when
+                                        necessary.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #002332">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Item<br>Management</h2>
+                                    <div class="card-body-text">
+                                        Keep an eye on all your items. Add items and assign them categories, sales
+                                        prices, purchases, taxes, units, and product types. You’ll be able to stay
+                                        organized for years!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card" style="border-color: #ffa12c">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Stack<br>Integration</h2>
+                                    <div class="card-body-text">
+                                        Get real-time notifications of company activities in your Slack channels.
+                                        Schedule messages for the future and receive alerts on important updates – all
+                                        from one easy to use interface!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #6fd943">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Zoom<br>Integration</h2>
+                                    <div class="card-body-text">
+                                        Eliminate the need to use multiple platforms for virtual meetings. Easily
+                                        schedule Zoom meetings and sync meeting details and attendees with your calendar
+                                        – For a smooth conferencing experience.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="border-color: #002332">
+                                <div class="card-body">
+                                    <h2 class="custom-card-header">Telegram<br>Integration</h2>
+                                    <div class="card-body-text">
+                                        Never miss important notifications again! Get project notifications sent
+                                        directly to your Telegram application in real-time. Collaborate better with team
+                                        members, and stay up-to-date with your projects.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="row">
 
-                <div class="col-lg-5 d-flex align-items-stretch">
-                    <div class="info">
-                        <div class="address">
-                            <i class="bi bi-geo-alt"></i>
-                            <h4>Location:</h4>
-                            <p>A108 Adam Street, New York, NY 535022</p>
+    <!-- ======= OUR SERVICES ======= -->
+    <section id="faq" class="faq"
+             style="background-color: transparent;background-image: linear-gradient(90deg, #fe612c 5%, #ffa12c 33%);">
+        <div class="container" data-aos="fade-up">
+            <h1 class="header-text">
+                OUR SERVICES <span style="color:#fff">MENTAL HEALTH SERVICES</span>
+            </h1>
+            <div class="col-md-12 my-5">
+                <div class="featured-carousel owl-carousel">
+                    <div class="item">
+                        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-5 p-5">
+                            <div class="w-100">
+                                <img src="./assets/img/Laptop-5.png" style="max-width: 100%" alt="">
+                            </div>
+                            <div class="vertical-separator"></div>
+                            <div class="w-100">
+                                <h3 class="header-text fst-italic">Counselling Request / Appointment</h3>
+                                <p class="fw-light fs-5">
+                                    Employees can schedule for online or
+                                    face-to-face counseling and
+                                    psychological services conducted by
+                                    counselors and clinical
+                                    psychologists.
+                                </p>
+                            </div>
                         </div>
-
-                        <div class="email">
-                            <i class="bi bi-envelope"></i>
-                            <h4>Email:</h4>
-                            <p>info@example.com</p>
+                    </div>
+                    <div class="item">
+                        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-5 p-5">
+                            <div class="w-100">
+                                <img src="./assets/img/Laptop-5.png" style="max-width: 100%" alt="">
+                            </div>
+                            <div class="vertical-separator"></div>
+                            <div class="w-100">
+                                <h3 class="header-text fst-italic">Counselling Hours Package / Credit System </h3>
+                                <p class="fw-light fs-5">
+                                    Employees can schedule for online or
+                                    face-to-face counseling and
+                                    psychological services conducted by
+                                    counselors and clinical
+                                    psychologists.
+                                </p>
+                            </div>
                         </div>
-
-                        <div class="phone">
-                            <i class="bi bi-phone"></i>
-                            <h4>Call:</h4>
-                            <p>+1 5589 55488 55s</p>
+                    </div>
+                    <div class="item">
+                        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-5 p-5">
+                            <div class="w-100">
+                                <img src="./assets/img/Laptop-5.png" style="max-width: 100%" alt="">
+                            </div>
+                            <div class="vertical-separator"></div>
+                            <div class="w-100">
+                                <h3 class="header-text fst-italic">Wellness Journey</h3>
+                                <p class="fw-light fs-5">
+                                    Employees can record and track their
+                                    health behaviors and aspects
+                                    including exercise, weight, sleep,
+                                    medication consumption, blood
+                                    glucose level, and blood pressure
+                                    level.
+                                </p>
+                            </div>
                         </div>
-
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+                    </div>
+                    <div class="item">
+                        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-5 p-5">
+                            <div>
+                                <img src="./assets/img/Laptop-5.png" style="max-width: 100%" alt="">
+                            </div>
+                            <div class="vertical-separator"></div>
+                            <div class="w-100">
+                                <h3 class="header-text fst-italic">
+                                    Wellness Data / Data
+                                    Insights</h3>
+                                <div class="fw-light fs-5">
+                                    The compilation and analysis of
+                                    employee wellness data provides
+                                    insights for employers to make
+                                    strategic decisions in enhancing
+                                    workplace and employee
+                                    wellness.Organisations will get a
+                                    wealth of data that can be used to
+                                    help improve employee well-being.
+                                    There are a number of ways to track
+                                    your organisation’s progress
+                                    by analyzing collected data. You may
+                                    choose to:
+                                    <ul>
+                                        <li>Monitor level of mental
+                                            wellness of employee for
+                                            specific department.
+                                        </li>
+                                        <li>Compare level of mental
+                                            wellness of employee between
+                                            department.
+                                        </li>
+                                    </ul>
+                                    All reports and data will remain
+                                    private and confidential. You will
+                                    have higher participation rates and
+                                    more genuine feedback if you
+                                    maintain confidentiality and
+                                    consistently demonstrate respect for
+                                    employee’s privacy.
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                </div>
+                    <div class="item">
+                        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-5 p-5">
+                            <div class="w-100">
+                                <img src="./assets/img/Laptop-5.png" style="max-width: 100%" alt="">
+                            </div>
+                            <div class="vertical-separator"></div>
+                            <div class="w-100">
+                                <h3 class="header-text fst-italic">
+                                    Accounting and Billing
+                                    Management</h3>
+                                <p class="fw-light fs-5">
 
-                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <label for="name">Your Name</label>
-                                <input type="text" name="name" class="form-control" id="name" required>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="name">Your Email</label>
-                                <input type="email" class="form-control" name="email" id="email" required>
+                                    Get all the tools to control your
+                                    business accounting and inventory in
+                                    one place. Use convenient dashboards
+                                    to set financial goals, invoice
+                                    clients, manage taxation, and see
+                                    where your money is going.
+
+                                </p>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="name">Subject</label>
-                            <input type="text" class="form-control" name="subject" id="subject" required>
+                    </div>
+                    <div class="item">
+                        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-5 p-5">
+                            <div class="w-100">
+                                <img src="./assets/img/Laptop-5.png" style="max-width: 100%" alt="">
+                            </div>
+                            <div class="vertical-separator"></div>
+                            <div class="w-100">
+                                <h3 class="header-text fst-italic">
+                                    Manage HR - Business Greatest
+                                    Assets</h3>
+                                <p class="fw-light fs-5">
+
+                                    Gain easy access to the personal
+                                    details of your staff. Edit staff
+                                    information, assign roles, and gain
+                                    control over access. Handle all
+                                    facets of your HR – from attendance
+                                    records to salary payments – all
+                                    without lifting a finger.
+
+                                </p>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="name">Message</label>
-                            <textarea class="form-control" name="message" rows="10" required></textarea>
+                    </div>
+                    <div class="item">
+                        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-5 p-5">
+                            <div class="w-100">
+                                <img src="./assets/img/Laptop-5.png" style="max-width: 100%" alt="">
+                            </div>
+                            <div class="vertical-separator"></div>
+                            <div class="w-100">
+                                <h3 class="header-text fst-italic">
+                                    Manage Leads & Deals</h3>
+                                <p class="fw-light fs-5">
+
+                                    Easily keep in touch with clients
+                                    and users. Streamline the contract
+                                    process for a more efficient
+                                    business. Generate new estimates
+                                    quickly and easily. Crush deadlines
+                                    by managing estimates – all in one
+                                    place, in a matter of minutes.
+
+                                </p>
+                            </div>
                         </div>
-                        <div class="my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column gap-5">
+                    <h1 class="text-white">SELECT <span class="text-yellow">DEVELOPMENT</span> REQUEST</h1>
+                    <span class="text-sm text-yellow">
+                        In less than 24 hours you will be contacted by one of our software experts and receive a
+                        detailed evaluation of your project, a presentation and suggestion of what can be done. Full
+                        confidentiality is guaranteed
+                    </span>
+                    <span class="text-sm text-white">
+                        We build modern web tools to help you jump-start your daily business work. We build modern web
+                        tools to help you jump-start your daily business work. We build modern web tools to help you
+                        jump-start your daily business work.
+                    </span>
+                    <span class="text-white">
+                        Select service for you:
+                    </span>
+                    <div class="d-flex gap-4">
+                        <div class="position-relative">
+                            <img src="./assets/img/category_label.png" style="width: 75px;height: 65px;" alt="">
+                            <div class="rotated-text position-absolute">Select</div>
                         </div>
-                        <div class="text-center">
-                            <button type="submit">Send Message</button>
+                        <div class="d-flex flex-column gap-4">
+                            <div class="card px-3"
+                                 style="border: none; background-color: transparent;background-image: linear-gradient(90deg, #FE612C 15%, #FFA12C 100%);">
+                                <img src="./assets/img/1.jpg" class="card-left-center-img" alt="">
+                                <div class="card-body py-4 px-5">
+                                    <h2 class="header-text"><span style="color:#fff">Product</span>
+                                        customization
+                                        <br>
+                                        Request
+                                    </h2>
+                                    <p class="text-sm" style="font-size: 12px;font-weight: 600;line-height: 20px;">
+                                        Trusted by more than 500 customers who purchased ERPWellness for their companies
+                                        around the global ERPWellness has the most comprehensive dashboard with all the
+                                        essential details under one system. ERPWellness Dashboards have made business
+                                        owners’ lives easier, from every detail like total Clients, Users, Invoices,
+                                        Projects, and estimations to Leads, Deals, and items, where you can get
+                                        quantitative data in the most simple layout.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card px-3"
+                                 style="border: none; background-color: #ffa12c;">
+                                <img src="./assets/img/2.jpg" class="card-left-center-img" alt="">
+                                <div class="card-body py-4 px-5">
+                                    <h2 class="header-text"><span style="color:#fff">New </span>
+                                        development
+                                        <br>
+                                        Request
+                                    </h2>
+                                    <p class="text-sm" style="font-size: 12px;font-weight: 600;line-height: 20px;">
+                                        More than 250 Customization requests by the trusted customers around the global
+                                        ERPWellness has the most flexible system and features to be customized based on
+                                        your exact business needs. Our creative and experienced developers are ready to
+                                        make all the changes that you need for your business. ERPWellness customization
+                                        options have made business owners’ lives easier, from every detail in the
+                                        functionalities and the system design.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold text-white">New Development Request</h2>
+                    <form action="" class="mt-3" id="developmentRequestForm">
+                        <div class="form-group mb-5">
+                            <label for="full_name" class="text-sm form-label text-white">Full Name</label>
+                            <input type="text" class="form-control bg-transparent" id="full_name"
+                                   placeholder="Full Name">
+                        </div>
+                        <div class="row mb-5">
+                            <div class="form-group col-md-6">
+                                <label for="email_address" class="text-sm form-label text-white">Email address</label>
+                                <input type="email" class="form-control bg-transparent" id="email_address"
+                                       placeholder="Type your email address">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="phone" class="text-sm form-label text-white">Phone Number</label>
+                                <input type="text" class="form-control bg-transparent" id="phone"
+                                       placeholder="000-111-222">
+                            </div>
+
+                        </div>
+                        <div class="form-group mb-5">
+                            <label for="project_brief" class="text-sm form-label text-white">Project Brief</label>
+                            <textarea rows="5" class="form-control bg-transparent" id="project_brief"
+                                      placeholder="Description"></textarea>
+                        </div>
+                        <div class="mb-5">
+                            <input class="form-control bg-transparent" type="file" id="customFile">
+                        </div>
+                        <div class="form-group mb-5">
+                            <label for="other_comment" class="text-sm form-label text-white">Other
+                                Comment/Request</label>
+                            <textarea rows="5" class="form-control bg-transparent" id="other_comment"
+                                      placeholder="Description"></textarea>
+                        </div>
+                        <button type="submit" style="color: #002332"
+                                class="btn custom-header-btn btn-lg w-100 text-center py-3 d-flex justify-content-center fs-6">
+                            <span>Submit</span>
+                            <i aria-hidden="true" class="bx bx-send" style="transform: rotate(-40deg)"></i>
+                        </button>
                     </form>
                 </div>
+            </div>
+        </div>
+    </section>
 
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact"
+             style="background-color: transparent;background-image: linear-gradient(90deg, #fe612c 5%, #ffa12c 33%);">
+        <div class="container text-white" data-aos="fade-up">
+
+            <div class="section-title">
+                <h1>Contact Us</h1>
+                <p>We give a helping hand to make sure you start with the right foot.</p>
             </div>
 
+            <form action="forms/contact.php" method="post" role="form" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" class="form-control bg-transparent" id="first_name"
+                               placeholder="First Name" required>
+                    </div>
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" class="form-control bg-transparent" name="last_name" id="last_name"
+                               placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="form-control bg-transparent"
+                               placeholder="Type your email address" id="email" required>
+                    </div>
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="text" class="form-control bg-transparent" placeholder="000-111-222"
+                               name="phone_number" id="phone_number">
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="upload_file">File</label>
+                    <input type="file" class="form-control bg-transparent" name="upload_file" id="upload_file">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control bg-transparent" name="message" rows="10" id="message"
+                              placeholder="Message"></textarea>
+                </div>
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-light rounded-5 py-3 px-4 fw-bold">Submit</button>
+                </div>
+            </form>
+
         </div>
-    </section><!-- End Contact Section -->
+    </section>
 
 </main><!-- End #main -->
 
-<!-- ======= Footer ======= -->
-<footer id="footer">
-
-    <div class="footer-newsletter">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <h4>Join Our Newsletter</h4>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                    <form action="" method="post">
-                        <input type="email" name="email"><input type="submit" value="Subscribe">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-3 col-md-6 footer-contact">
-                    <h3>Arsha</h3>
-                    <p>
-                        A108 Adam Street <br>
-                        New York, NY 535022<br>
-                        United States <br><br>
-                        <strong>Phone:</strong> +1 5589 55488 55<br>
-                        <strong>Email:</strong> info@example.com<br>
-                    </p>
-                </div>
-
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Our Social Networks</h4>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-                    <div class="social-links mt-3">
-                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="container footer-bottom clearfix">
-        <div class="copyright">
-            &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-    </div>
-</footer><!-- End Footer -->
 
 <div id="preloader"></div>
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center shadow"
+   style="background-color: #002332"><i
         class="bi bi-arrow-up-short"></i></a>
 
 <!-- Vendor JS Files -->
-<script src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="assets/js/popper.js"></script>
 <script src="assets/vendor/aos/aos.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -962,10 +1453,6 @@
 <script src="assets/js/main.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/carousel-script.js"></script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854"
-        integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg=="
-        data-cf-beacon='{"rayId":"7ef9fc95ae494124","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.7.0","si":100}'
-        crossorigin="anonymous"></script>
 
 
 </body>
