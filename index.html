@@ -31,13 +31,9 @@
     <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
 
-    <!-- =======================================================
-    * Template Name: Arsha
-    * Updated: Jul 27 2023 with Bootstrap v5.3.1
-    * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 
     <style>
         .custom-header-btn {
@@ -71,6 +67,25 @@
             left: 50%;
             top: -10%;
             transform: translate(-50%, 0%);
+        }
+
+        .card-quotes-img {
+            width: 36px !important;
+            /*object-fit: cover;*/
+            position: absolute;
+            left: 70px;
+            top: -15px;
+            background-color: white;
+            transform: translate(-50%, 0%);
+        }
+
+        .quote-card {
+            border-style: solid !important;
+            border-width: 1px 1px 1px 1px !important;
+            border-color: #ffa12c !important;
+            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s !important;
+            padding: 51px 29px 33px 32px !important;
+            border-radius: 30px;
         }
 
         .card-left-img {
@@ -170,6 +185,32 @@
             /*left: 0;*/
             /*top: 50%;*/
             transform: translateY(-50%) rotate(13deg);
+        }
+
+        .review-slide-title {
+            color: #002332;
+            font-family: "Poppins", Sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 30px;
+            font-style: italic;
+        }
+
+        .review-text {
+            text-align: left;
+            font-family: "Lato", Sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            font-style: italic;
+            line-height: 24px;
+        }
+
+        .review-user {
+            text-align: left;
+            font-family: "Lato", Sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 12px;
         }
     </style>
 </head>
@@ -406,68 +447,144 @@
             <div class="row">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h2 class="heading-section mb-5">Carousel #03</h2>
+                        <div class="text-center">
+                            <h1 style="color: #002332">What Our Customers Say
+                                <br>
+                                About <span style="color:#FFA12C;">Our Solutions</span></h1>
                         </div>
-                        <div class="col-md-12">
-                            <div class="featured-carousel owl-carousel">
-                                <div class="item">
-                                    <div class="work">
-                                        <div class="img d-flex align-items-end justify-content-center"
-                                             style="background-image: url(./assets/img/work-1.jpg.webp);">
-                                            <div class="text w-100">
-                                                <span class="cat">Web Design</span>
-                                                <h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                        <div class="col-md-12 my-5">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <!-- Slide 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="quote-card">
+                                            <img src="./assets/img/quotes.png" class="card-quotes-img" alt="">
+                                            <div class="d-flex justify-content-between align-items-center my-3">
+                                                <h2 class="review-slide-title">Fantastic</h2>
+                                                <div class="d-flex justify-content-start">
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                </div>
+                                            </div>
+                                            <div class="review-text">
+                                                This is actually a complete ERP system with a very stunning look
+                                                and VERY FAST SUPPORT
+                                            </div>
+                                            <div class="d-flex flex-column mt-4 justify-content-start review-user">
+                                                <span><strong>@ Dawnysuccess</strong></span>
+                                                <span>from codecanyon</span>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="item">
-                                    <div class="work">
-                                        <div class="img d-flex align-items-end justify-content-center"
-                                             style="background-image: url(./assets/img/work-1.jpg.webp);">
-                                            <div class="text w-100">
-                                                <span class="cat">Web Design</span>
-                                                <h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                                    <!-- Slide 2 -->
+                                    <div class="swiper-slide">
+                                        <div class="quote-card">
+                                            <img src="./assets/img/quotes.png" class="card-quotes-img" alt="">
+                                            <div class="d-flex justify-content-between align-items-center my-3">
+                                                <h2 class="review-slide-title">Fantastic</h2>
+                                                <div class="d-flex justify-content-start">
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                </div>
+                                            </div>
+                                            <div class="review-text">
+                                                Thanks for Great Customer Support and Good Quality Code.
+                                            </div>
+                                            <div class="d-flex flex-column mt-4 justify-content-start review-user">
+                                                <span><strong>@ zamipl</strong></span>
+                                                <span>from codecanyon</span>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="item">
-                                    <div class="work">
-                                        <div class="img d-flex align-items-end justify-content-center"
-                                             style="background-image: url(./assets/img/work-1.jpg.webp);">
-                                            <div class="text w-100">
-                                                <span class="cat">Web Design</span>
-                                                <h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                                    <!-- Slide 3 -->
+                                    <div class="swiper-slide">
+                                        <div class="quote-card">
+                                            <img src="./assets/img/quotes.png" class="card-quotes-img" alt="">
+                                            <div class="d-flex justify-content-between align-items-center my-3">
+                                                <h2 class="review-slide-title">Fantastic</h2>
+                                                <div class="d-flex justify-content-start">
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                </div>
+                                            </div>
+                                            <div class="review-text">
+                                                Excellent support and amazing ERP
+                                            </div>
+                                            <div class="d-flex flex-column mt-4 justify-content-start review-user">
+                                                <span><strong>@ mrblue9876</strong></span>
+                                                <span>from codecanyon</span>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="item">
-                                    <div class="work">
-                                        <div class="img d-flex align-items-end justify-content-center"
-                                             style="background-image: url(./assets/img/work-1.jpg.webp);">
-                                            <div class="text w-100">
-                                                <span class="cat">Web Design</span>
-                                                <h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                                    <!-- Slide 4 -->
+                                    <div class="swiper-slide">
+                                        <div class="quote-card">
+                                            <img src="./assets/img/quotes.png" class="card-quotes-img" alt="">
+                                            <div class="d-flex justify-content-between align-items-center my-3">
+                                                <h2 class="review-slide-title">Fantastic</h2>
+                                                <div class="d-flex justify-content-start">
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                </div>
+                                            </div>
+                                            <div class="review-text">
+                                                Support and Code 100%
+                                            </div>
+                                            <div class="d-flex flex-column mt-4 justify-content-start review-user">
+                                                <span><strong>@ fatecmais 2</strong></span>
+                                                <span>from codecanyon</span>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="item">
-                                    <div class="work">
-                                        <div class="img d-flex align-items-end justify-content-center"
-                                             style="background-image: url(./assets/img/work-1.jpg.webp);">
-                                            <div class="text w-100">
-                                                <span class="cat">Web Design</span>
-                                                <h3><a href="#">Working Spaces for Startups Freelancer</a></h3>
+                                    <!-- Slide 5 -->
+                                    <div class="swiper-slide">
+                                        <div class="quote-card">
+                                            <img src="./assets/img/quotes.png" class="card-quotes-img" alt="">
+                                            <div class="d-flex justify-content-between align-items-center my-3">
+                                                <h2 class="review-slide-title">Fantastic</h2>
+                                                <div class="d-flex justify-content-start">
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                    <i class="bx bxs-star" style="color: #ffa12c"></i>
+                                                </div>
+                                            </div>
+                                            <div class="review-text">
+                                                Brilliant and well-thought CRM/PRM/HRM! A real value for money!…
+                                            </div>
+                                            <div class="d-flex flex-column mt-4 justify-content-start review-user">
+                                                <span><strong>@ attunist</strong></span>
+                                                <span>from codecanyon</span>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- Add more slides as needed -->
                                 </div>
+                                <!-- Pagination -->
+                                <div class="swiper-pagination"></div>
+                                <!-- Navigation -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
                             </div>
+
                         </div>
+
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center my-5">
+                        <a href="" class="btn custom-header-btn text-uppercase py-3">Check Our Reviews</a>
                     </div>
                 </div>
             </div>
@@ -560,7 +677,7 @@
 
                     <div class="item">
                         <div>
-                            <h3 class="text-yellow">STOP WASTING TIME AND MONEY ON MULTIPLE  TOOLS</h3>
+                            <h3 class="text-yellow">STOP WASTING TIME AND MONEY ON MULTIPLE TOOLS</h3>
                             <h2 class="text-white">MANAGE ALL ASPECTS OF YOUR BUSINESS WITH ONE POWERFUL TOOL</h2>
                             <h2 class="text-white">ERP<span class="text-yellow">Wellness </span>
                             </h2>
@@ -1941,8 +2058,46 @@
 <script src="assets/js/main.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/carousel-script.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>-->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 2, // Display two slides at a time
+        speed: 400,
+        autoplay: true,
+        spaceBetween: 20,
+        // Enable pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true, // Make pagination bullets clickable
+            type: 'custom', // Use custom pagination rendering
+            renderCustom: function (swiper, current, total) {
+                return `<span class="text-yellow">${current}</span>/<span>${total}</span>`; // Display current slide number and total
+            },
+        },
 
-
+        // Enable navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        // on: {
+        //     slideChangeTransitionStart: function () {
+        //         // Hide content of the next slide when slide transition starts
+        //         var nextSlide = this.slides[this.activeIndex + 1];
+        //         if (nextSlide) {
+        //             nextSlide.style.opacity = '0';
+        //         }
+        //     },
+        //     slideChangeTransitionEnd: function () {
+        //         // Make next slide fully visible when slide transition ends
+        //         var nextSlide = this.slides[this.activeIndex + 1];
+        //         if (nextSlide) {
+        //             nextSlide.style.opacity = '1';
+        //         }
+        //     },
+        // },
+    });
+</script>
 </body>
 
 </html>
